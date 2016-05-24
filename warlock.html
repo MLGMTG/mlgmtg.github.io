@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Warlock Deck</title>
+	<link rel="stylesheet" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<header class="header_page">
+		<a class="home" href="index.html"></a>
+		<h2>WARLOCK</h2>
+		<img src="img/ico_warlock.png" width="70" height="70" alt="warlock">
+	</header>
+	<div class="class_line warlock_line"></div>
+
+
+	<div class="wrapper clearfix">
+		<input type="radio" name="point" id="slide1_warlock" checked>
+		<input type="radio" name="point" id="slide2_warlock">
+		<input type="radio" name="point" id="slide3_warlock">
+
+
+		<div class="slider_block">
+			<div class="slides slide1_warlock"></div>
+			<div class="slides slide2_warlock"></div>
+			<div class="slides slide3_warlock"></div>
+
+		</div>
+
+		<div class="arhetip_block">
+			<label for="slide1_warlock" class="arh1_warlock">Zoolock</label>
+			<label for="slide2_warlock" class="arh2_warlock">Handlock</label>
+			<label for="slide3_warlock" class="arh3_warlock">Renolock</label>
+		</div>
+
+	</div>
+	<div class="socio">da.kolesnikov.net@gmail.com</div>
+<script type="text/javascript">
+	var reno=document.querySelector(".arh3_warlock");
+  var slider=document.querySelector(".slider_block");
+
+	reno.addEventListener("click", function(event) {
+		slider.classList.add("ex_slider_reno");
+	});
+</script>
+</body>
+</html>
