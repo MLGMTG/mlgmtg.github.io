@@ -1,0 +1,486 @@
+
+body {
+	max-width: 770px;
+	margin: 0 auto;
+	font-family: "PT Sans", "Arial", sans-serif;
+
+}
+.main_header {
+	min-height: 60px;
+	position: relative;
+}
+.nav {
+
+	width: 676px;
+	margin: 0 auto;
+	padding: 0;
+	padding-top: 14px;
+	font-size: 0;
+}
+.nav_inside {
+	display: inline-block;
+	vertical-align: top;
+	width: 369px;
+	margin-left: 62px;
+}
+.nav li {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+
+}
+.nav li a {
+	text-decoration: none;
+	color: #000;
+}
+.nav li a:hover {
+	color: #a3c7de;
+}
+.nav li a:active {
+	color: #bcbcbc;
+}
+.li1, .li2
+{
+	float: left;
+}
+.li3, .li4 {
+	float: right;
+}
+.main_header img {
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	top: 0;
+	left: 325px;
+}
+.title {
+	width: 490px;
+	margin: 0 auto;
+	margin-top: 58px;
+	margin-bottom: 53px;
+
+}
+.title h2 {
+	text-align: center; 
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+}
+.title p {
+	text-align: center; 
+	font-size: 14px;
+	line-height: 26px;
+	color: #333333;
+}
+.item1_title {
+	float: left;
+	width: 33.5%;
+	min-height: 255px;
+	background: #81b3d2;
+	text-align: center;
+	color: white;
+}
+.item1_title h3 {
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 25px;
+	padding-top: 24px;
+}
+.item1_title p {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.item1 img {
+	float: left;
+	width: 66.5%;
+	height: 255px;
+}
+.bonus {
+	min-width: 671px;
+	min-height: 210px;
+	margin: 55px 46px 65px 52px; 
+}
+.bonus div {
+	width: 165px;
+	text-align: center;
+}
+.bonus div h2{
+	font-size: 21px;
+	line-height: 25px;
+	font-weight: 700;
+	padding-top: 108px;
+}
+.bonus p {
+	font-size: 14px;
+	line-height: 21px;
+	color:#333333;
+	text-transform: uppercase;
+}
+
+.bonus_home {
+	float: left;
+	background: url("img/home.png") no-repeat top center;
+}
+.bonus_eat {
+	float: left;
+	background: url("img/eat.png") no-repeat top center;
+	margin-left: 102px;
+}
+.bonus_souvenirs {
+	float: right;
+	background: url("img/souv.png") no-repeat top center;
+}
+
+.item2_title {
+	float: right;
+	width: 258px;
+	min-height: 255px;
+	background: #81b3d2;
+	text-align: center;
+	color: white;
+}
+.item2_title h3 {
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 25px;
+	padding-top: 24px;
+}
+.item2_title p {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.item2 img {
+	float: left;
+	width: 512px;
+	height: 255px;
+}
+.item3_5 {
+	background: #eeeeee;
+}
+.item3_5 div {
+	width: 33%;
+	float: left;
+	text-align: center;
+}
+
+.item3_5 h3 {
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 25px;
+	padding-top: 24px;
+	margin-top: 0;
+}
+.item3_5 p {
+	font-size: 14px;
+	line-height: 21px;
+}
+.motel {
+	position: relative;
+	height: 290px;
+	text-align: center;
+	position: relative;
+}
+.motel b {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 700;
+	display: block;
+	padding-top: 55px;
+}
+.motel p {
+	font-size: 14px;	
+	line-height: 24px;
+	color: #333333;
+	padding-top: 5px;
+
+}
+.motel_btn {
+	width: 570px;
+	height: 80px;
+	background: #766357;
+	position: absolute;
+	bottom: 0;
+	left: 100px;
+	color: white;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	border: none;
+	border-radius: 2px;
+}
+
+.motel_btn:hover {
+	background-color:  #61412d;
+	color: #e0e0e0;
+}
+footer {
+	min-height: 120px;
+
+
+}
+
+footer b {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 21px;
+	line-height: 25px;
+	font-weight: 700;
+	padding-left: 60px;
+	padding-top: 48px;
+	margin-right: 110px;
+}
+.socio {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 0;
+}
+.btn {
+	display: inline-block;
+	vertical-align: top;
+	width: 40px;
+	height: 40px;
+	font-size: 20px;
+	margin-top: 35px;
+	margin-left: 5px;
+}
+.tw {
+	background: #81b3d2 url("img/sprite.png") no-repeat 12px 15px;
+}
+.tw:hover {
+	background-color: #669ec0;
+}
+.tw:active {
+	background-color: #5496bd;
+}
+
+.fb {
+	background: #81b3d2 url("img/sprite.png") no-repeat 15px -14px;
+}
+.fb:hover {
+	background-color: #669ec0;
+}
+.fb:active {
+	background-color: #5496bd;
+}
+.u2 {
+	background: #81b3d2 url("img/sprite.png") no-repeat 10px -43px;
+}
+.u2:hover {
+	background-color: #669ec0;
+}
+.u2:active {
+	background-color: #5496bd;
+}
+.html_academy {
+	display: inline-block;
+	vertical-align: top;
+	width: 195px;
+	height: 39px; 
+	background: url("img/logo_ha.png") no-repeat;
+	margin-left: 80px;
+	margin-top: 40px;
+
+}
+.html_academy:hover {
+	background: url("img/logo_ha_hover.png") no-repeat;
+	
+}
+
+.popup {
+	position: absolute;
+	display: none;
+	top: 290px;
+	left: 100px;
+	background: #fff;
+	width: 570px;
+	height: 300px;
+	box-shadow: 0 0 10px rgba(0,0,0, .55);
+}
+.popup_show {
+	display: block;
+}
+.popup p {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px;
+	padding: 0px; 
+}
+.popup_container {
+	padding: 55px; 
+}
+
+ .popup input, .popup a, .popup button {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.popup_item3 {
+	font-size: 0;
+}
+.popup p, .popup input {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 700;
+	margin-right: 20px;
+
+}
+.popup input {
+	width: 300px;
+	height: 30px;
+	background: #f2f2f2;
+	border: none;
+	margin-right: 0; 
+}
+.popup input:active {
+	background-color: white;
+	box-sizing: border-box;
+	border: 2px solid #f2f2f2;
+}
+
+.popup_item1 , .popup_item2 {
+	margin-bottom: 30px;
+	position: relative;
+	float: left;
+
+}
+
+.popup_item1 a, .popup_item2 a {
+	position: absolute;
+	right: 15px;
+	top: 3px;
+	width: 21px;
+	height: 22px;
+	background: url("img/ico_kalendar.png") no-repeat center center;
+
+}
+.popup_item1 a:hover, .popup_item2 a:hover {
+	background: url("img/ico_kalendar_hover.png") no-repeat;
+}
+.popup_item3 {
+	margin-bottom: 55px;
+}
+.popup_item3 input {
+	width: 30px;
+	height: 30px;
+	text-align: center;
+}
+.popup_item3_left {
+	float: left;
+	width: 195px;
+}
+.popup_item3_right {
+	float: right;
+	width: 165px;
+}
+.min {
+	width: 30px;
+	height: 30px;
+	background: #f2f2f2 url("img/ico_min.png") no-repeat center center;
+	border: none;
+}
+.min:hover {
+	width: 30px;
+	height: 30px;
+	background: #f2f2f2 url("img/ico_min_hover.png") no-repeat center center;
+	border: none;
+}
+
+.max {
+	width: 30px;
+	height: 30px;
+	background: #f2f2f2 url("img/ico_max.png") no-repeat center center;
+	border: none;
+
+}
+
+.max:hover {
+	width: 30px;
+	height: 30px;
+	background: #f2f2f2 url("img/ico_max_hover.png") no-repeat center center;
+	border: none;
+
+}
+.popup_item1 input, .popup_item2 input {
+	padding: 0px 30px 0px 10px;
+}
+.popup_item3 input {
+	padding: 0px 5px 0px 5px;
+}
+.btn_form {
+	width: 450px;
+	height: 60px;
+	font-size: 21px;
+	line-height: 25px;
+	font-weight: 700;
+	background-color: #81b3d2 !important;
+	color: white;
+}
+
+
+/*CSS для hotels.html*/
+.find_hotels {
+	width: 100%;
+	min-height: 215px;
+	background: #487daa url("img/hotels_bg.png") no-repeat center center;
+	color: white;
+}
+.java {
+	display: inline-block;
+	width: 328px;
+	min-height: 153px;
+	background: url("img/java.png") no-repeat center right;
+	padding-top: 65px;
+	padding-left: 50px; 
+}
+
+
+/*Задаем блочные стили для секций*/
+.infra, .hotel_type {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 30px;
+	margin-left: 40px;
+}
+
+/*Задаем стили для h2 в секциях*/
+.find_hotels h2 {
+	margin: 0;
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: 700;
+}
+/*Задаем сьиди для оберток label*/
+.infra label, .hotel_type label{
+	display: block;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	margin-top: 20px;
+}
+/*Спрячем стандартный чек-бокс*/
+.find_hotels input[type="checkbox"] {
+	display: none;
+}
+/*В спане выведем изображение нестандартного чекбокса*/
+.find_hotels input[type="checkbox"] + span {
+	display: inline-block;
+	vertical-align: middle;
+	width: 26px;
+	height: 22px;
+	margin: 0 17px 0 0;
+	background: url("img/un_chek.png") no-repeat left top;
+	cursor: pointer; 
+}
+/*В спане выведем изображение нестандартного активного чекбокса*/
+.find_hotels input[type="checkbox"]:checked + span {
+	background: url("img/check.png") no-repeat;
+}
+.clearfix::after {
+	content:"";
+	display: table;
+	clear: both;
+}

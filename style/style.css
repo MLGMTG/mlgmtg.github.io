@@ -1,0 +1,636 @@
+body {
+	max-width: 800px;
+	min-width: 270px;
+	margin: 0 auto;
+	position: relative;
+	font-family: "Lora", "Georgia", serif;	 
+}
+
+header {
+	position: relative;
+	height: 170px;
+}
+
+header::before {
+	content: "";
+	width: 5px;
+	height: 125px;
+	position: absolute;
+	background: #046380;
+	top: 40px;
+	left: -15px;
+	border-radius: 5px;
+}
+
+.info {
+	padding-top: 20px;
+	float: left;
+	width: 60%;
+	font-size: 20px;
+	font-weight: bold;
+	color: #002f2f;
+}
+
+.socio {
+	position: absolute;
+	top: -100px;
+	left: 180px;
+}
+
+.ico {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: #046380;
+	border-radius: 50px;
+}
+
+.ico:hover {
+	animation-name: anim_shake_socio;
+	animation-duration: .7s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease;
+}
+
+.vk {
+	background: url(../img/ico_sprite.png) no-repeat -7px center;
+}
+
+.fb {
+	background: url(../img/ico_sprite.png) no-repeat -68px center;
+}
+
+.tw {
+	background: url(../img/ico_sprite.png) no-repeat -128px center;
+}
+
+.ico {
+	display: inline-block;
+	top: 25px;
+	left: 180px;
+	width: 50px;
+	height: 50px;
+	background-color: #046380;
+	border-radius: 50px;
+}
+
+.ico:hover {
+	animation-name: anim_shake_socio;
+	animation-duration: .7s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+
+header img {
+	padding-top: 20px;
+	float: right;
+	width: 240px;
+}
+
+.tr_tools {
+	position: absolute;
+	right: 0;
+	top: 20px;
+	display: none;
+}
+
+.tr_tools img {
+	width: 80px;
+	height: 80px;
+	margin-top: 30px;
+}
+
+.tr_tools img:nth-child(2) {
+	margin-top: 0;
+}
+
+.tr_tools p {
+	position: absolute;
+	display: none;
+	font-weight: bold;
+	color: #002f2f;
+	
+}
+.tr_html_descr {
+	right: 170px;
+	top: 110px;
+}
+
+.tr_js_descr {
+	right: 78px;
+	top: 80px;
+}
+
+.tr_css_descr {
+	right: 3px;
+	top: 110px;
+}
+
+.email_ico {
+	position: absolute;
+	display: none;
+	top: 135px;
+	left: 350px;
+	width: 25px;
+	height: 20px;
+	background: url(../img/ico_mail_dark.png) no-repeat center;
+	background-size: 100%;
+	cursor: pointer; 
+
+}
+.email_ico:hover {
+	background-size: 90%;
+}
+
+.email {
+	text-decoration: none;
+}
+
+.email:link, .email:visited {
+	color: #002f2f;
+}
+
+/*Классы для анимаций*/
+
+.block_down {
+	animation: anim_ico_down 1s;
+	animation-fill-mode: forwards;
+}
+
+.block_up {
+	top: 25px;
+	animation-fill-mode: forwards;
+	animation-name: anim_ico_up;
+	animation-duration: 1s;
+	animation-delay: 2s;
+}
+
+.dscr_left {
+	animation-fill-mode: forwards;
+	animation-name: anim_html_dscr;
+	animation-duration: 2s;
+	animation-timing-function:ease-out;
+}
+
+.dscr_right {
+	animation-fill-mode: forwards;
+	animation-name: anim_css_dscr;
+	animation-duration: 2s;
+	animation-timing-function:ease-out;
+}
+
+.dscr_top {
+	animation-fill-mode: forwards;
+	animation-name: anim_js_dscr;
+	animation-duration: 2s;
+	animation-timing-function:ease-out;
+}
+
+.switch_left {
+	animation-fill-mode: forwards;
+	animation-name: anim_switch_left;
+	animation-duration: .5s;
+}
+
+.switch_right {
+	animation-fill-mode: forwards;
+	animation-name: anim_switch_right;
+	animation-duration: .5s;
+}
+
+/*Стили для мобильной и планшетной версий*/
+
+.header_mob {
+	display: none;
+	width: 100%;
+	height: 50px;
+	background-color: #002f2f;
+	color: #efecca;
+}
+
+.wrapper_mob {
+	width: 220px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+.info_mob {
+	width: 160px;
+	height: 30px;
+	display: none;
+	vertical-align: top;
+	font-size: 20px;
+	padding-top: 12px;
+	font-weight: bold;
+}
+
+.work_mob {
+	display: none;
+	width: 160px;
+	height: 30px;
+	font-size: 20px;
+	padding-top: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.email_ico_mob {
+	display: inline-block;
+	vertical-align: top;
+	width: 32px;
+	margin-left: 64px;
+	margin-right: 64px;
+	height: 30px;
+	background: url(../img/ico_mail.png) no-repeat center center;
+	background-size: auto auto;
+	padding-top: 22px;
+}
+
+.email_ico_mob:hover {
+	cursor: pointer;
+	background-size: 90%;
+}
+
+.ico_switch {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: url(../img/ico_switch.png) no-repeat center;
+	cursor: pointer;
+}
+
+form {
+	position: absolute;
+	display: none;
+	top: 5px;
+	right: 0;
+	width: 400px;
+	height: 200px;
+	background: #046380;
+	z-index: 1;
+	border-radius: 5px;
+	
+}
+
+.form_name {
+	display: block;
+	width: 250px;
+	margin: 10px auto 10px auto;
+	padding: 0px 5px 0px 10px;
+	border-radius: 10px;
+	background: #efecca;
+}
+
+.form_message {
+	display: block;
+	width: 360px;
+	height: 100px;
+	margin: 10px auto 0px auto;
+	padding: 10px;
+	resize: none;
+	border-radius: 10px;
+	background: #efecca
+}
+
+.form_reset {
+	display: inline-block;
+	border-radius: 5px;
+	margin-left: 70px;
+	background: ;
+}
+
+.form_submit {
+	display: inline-block;
+	margin-top: 5px;
+	width: 100px;
+	border-radius: 5px;
+	margin-left: 100px;
+
+}
+.form_close {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	background: url(../img/ico_close.png) no-repeat center center;
+	background-size: auto;
+	top: 10px;
+	right: 20px;
+}
+
+.form_close:hover {
+	transform: rotate(90deg);
+	transition: .3s; 
+}
+
+.vk:hover, .fb:hover, .tw:hover {
+	background-position: 5px auto;
+}
+
+main {
+	font-size: 0;
+}
+
+section {
+	display: inline-block;
+	position: relative;
+	width: 240px;
+	height: 150px;
+	box-shadow: 0 0 8px 0 #002f2f;
+	margin-right: 40px;
+	margin-top: 40px;
+	overflow: hidden;
+}
+
+section:nth-child(3n) {
+	margin-right: 0px
+}
+
+main span {
+	position: absolute;
+	display: inline-block;
+	opacity: 0;
+	left: 0;
+	font-size: 15px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,47,47, .9);
+	transition: .5s;
+	text-align: center;
+	color: #efecca;
+}
+
+span a {
+	display: block;
+	width: 100px;
+	height: 30px;
+	margin-left: 70px;
+	margin-top: 25px;
+	text-decoration: none;
+	color: #efecca;
+	background-color: #046380;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 10px; 
+	border-radius: 5px; 
+}
+
+main section:hover span {
+opacity: 1;
+}
+
+.bbs1 {
+	background: url(../img/1.jpg) no-repeat center center;
+	background-size: 100% 100%;
+}
+.nerds {
+	background: url(../projects/nerds/nerds_prev.jpg) no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.sedona {
+	background: url(../projects/sedona/sedona_prev.jpg) no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.ds {
+	background: url(../projects/design_studios/ds_prev.jpg) no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.deck {
+	background: url(../projects/deck/deck_prev.jpg) no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.calc {
+	background: url(../projects/calc/calc_prev.jpg) no-repeat center center;
+	background-size: 70% 70%;
+}
+
+.skills {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.skills ul {
+	display: flex;
+	list-style: none;
+	margin: 20px 0 0 0;
+	padding: 0;
+}
+
+.skills li {
+	flex-grow: 1;
+	font-size: 17px;
+	background: #046380;
+	height: 50px;
+	margin-right: 2px;
+}
+
+.skills li:last-child {
+	margin-right: 0;
+}
+
+.skills li:hover {
+	background: #002f2f;
+	transition: .5s;
+}
+
+.skills a {
+	padding-top: 15px;
+	display: block;
+	height: 35px;
+	text-align: center;
+	
+	color: #efecca;
+	text-decoration: none;
+}
+.footer_mob {
+	display: none;
+	margin-top: 5px;
+	width: 100%;
+	height: 50px;
+	background-color: #002f2f;
+}
+
+.wrapper_soc {
+	width: 160px;
+	margin: 0px auto;
+}
+
+.wrapper_soc a {
+	display: inline-block;
+	vertical-align: center;
+	margin-top: 2px;
+	width: 45px;
+	height: 45px;
+}
+
+.wrapper_soc a:nth-child(2) {
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.wrapper_soc a:hover {
+	transform: scale(.9);
+	transition-duration: 1s;
+}
+
+@media (max-width:820px) {
+	
+	header {
+		display: none;
+	}
+
+	.email_ico {
+		display: none !important;
+	}
+
+	.header_mob {
+		display: block;
+	}
+
+	main {
+		width: 520px;
+		margin: 0 auto; 
+	}
+
+	section {
+		margin: 10px 20px 0 0; 
+	}
+
+	section:nth-child(3n) {
+		margin: 10px 20px 0 0;
+	}
+
+	.footer_mob {
+		display: block;
+		position: relative;
+	}
+
+	form {
+		width: 100%;
+		min-width: 270px;
+		top: 52px;
+		left: 0;
+		border-radius: 0;
+	}
+
+	.form_reset {
+		display: none;
+	}
+
+	.form_close {
+		left: 78%;
+		background-size: 80%; 
+	}
+
+	.form_name {
+		width: 20%;
+		min-width: 130px;
+	}
+
+	.form_message {
+		width: 60%;
+		min-width: 170px;
+	}
+
+	.form_submit {
+		display: block;
+		margin: 5px auto;
+	}
+}
+
+@media (max-width:520px) {
+	.header_mob {
+		height: 50px;
+	}
+
+	.ico_mob {
+		display: inline-block;
+		margin: 5px auto;
+	}
+
+	main {
+		width: 100%;
+	}
+
+	section {
+		display: block;
+		margin: 10px auto; 
+		height: 75px;
+		background-position: top !important;
+		background-size: 100% auto  !important; 
+	}
+
+	section:nth-child(3n) {
+		margin: 10px auto;
+	}
+
+	section p {
+		display: none;
+	}
+
+	span a {
+		margin-top: 17px;
+	}
+	.skills li {
+		font-size: 14px;
+	}
+
+}
+
+.clearfix::after {
+	content:"";
+	display: table;
+	clear: both;
+}
+
+
+/*Блок анимаций*/
+
+@keyframes anim_ico_down {
+	0% {transform: translateY(0px);}
+	100% {transform: translateY(125px);}
+}
+
+@keyframes anim_ico_up {
+	0% {transform: translateY(0px);}
+	100% {transform: translateY(-125px);}
+}
+
+@keyframes anim_html_dscr {
+	0% {transform: translateX(-100px);}
+	80% {transform: translateX(10px);}
+	100% {transform: translateX(0px);}
+}
+
+@keyframes anim_js_dscr {
+	0% {transform: translateY(-100px);}
+	80% {transform: translateY(10px);}
+	100% {transform: translateY(0px);}
+}
+
+@keyframes anim_css_dscr {
+	0% {transform: translateX(100px);}
+	80% {transform: translateX(-10px);}
+	100% {transform: translateX(0px);}
+}
+
+@keyframes anim_switch_left {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(-90deg);}
+}
+
+@keyframes anim_switch_right {
+	from {transform: rotate(-90deg);}
+	to {transform: rotate(0deg);}
+}
+
+@keyframes anim_shake_socio {
+	0% {transform: scale(1);}
+	25% {transform: scale(.8);}
+	75% {transform: scale(1.15);}
+	100% {transform: scale(1);}
+}

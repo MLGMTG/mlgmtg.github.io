@@ -1,32 +1,98 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="eng">
 <head>
 	<meta charset="UTF-8">
-	<title>HS Decks standard</title>
-	<link rel="stylesheet" href="style.css">
-	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio | Kolesnikov Danila</title>
+	<link rel="stylesheet" href="style/normalize.css">
+	<link rel="stylesheet" href="style/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
-	<header><h1>Choose your class</h1></header>
-	<div class="main_container">
-		<div class="main_container__first_str">
-			<a class="warrior" href="warrior.html"></a>
-			<a class="shaman" href="shaman.html"></a>
-			<a class="rogue" href="rogue.html"></a>
-		</div>
-		<div class="main_container__second_str">
-			<a class="paladin" href="paladin.html"></a>
-			<a class="hunter" href="hunter.html"></a>
-			<a class="druid" href="druid.html"></a>
-		</div>
-		<div class="main_container__third_str">
-			<a class="warlock" href="warlock.html"></a>
-			<a class="mage" href="mage.html"></a>
-			<a class="priest" href="priest.html"></a>
+	<header class="clearfix">
+		<div class="info">
+			<p class="fio">Danila Kolesnikov</p>
+			<div class="socio">
+				<a class="ico vk" href="https://vk.com/"></a>
+				<a class="ico fb" href="https://facebook.com/"></a>
+				<a class="ico tw" href="https://twitter.com/"></a>
 			</div>
-			<div class="socio">da.kolesnikov.net@gmail.com</div>
+
+			<p>Front-end developer</p>
+			<!-- В случае если у пользователя отключен JS, можно поставить ссылку на страницу с формой написания сообщения -->
+			<a href="#" class="email">Email: da.kolesnikov.net@gmail.com</a> 	
+			<a href="#" class="email_ico"></a>
+		</div>
+
+		<img class="tools" src="img/pic_logo.png" alt="Здесь могла быть Ваша реклама :)">
+
+		<div class="tr_tools">	
+			<img src="img/css_ico.png" alt="css">
+			<img src="img/js_ico.png" alt="js">
+			<img src="img/html_ico.png" alt="html">
+			<p class="tr_html_descr">Logical</p>
+			<p class="tr_js_descr">Functional</p>
+			<p class="tr_css_descr">Beautiful</p>
+		</div>
+	</header>
+
+	<div class="header_mob">
+		<div class="wrapper_mob">
+			<p class="email_ico"></p>
+			<!-- В случае если у пользователя отключен JS, можно поставить ссылку на страницу с формой написания сообщения -->
+			<a href="#" class="email_ico_mob"></a>
+			<div class="info_mob">Kolesnikov D.A.</div>
+			<div class="work_mob">FrE developer</div>
+			<div class="ico_switch"></div> 
+		</div>
 	</div>
-	
-	
+
+	<form>
+		<input type="hidden" name="project_name" value="Portfolio-Site">
+		<input type="hidden" name="admin_email" value="da.kolesnikov.net@gmail.com">
+
+		<input class="form_name" autofocus type="text" name="name" placeholder="Your name" required>
+		<textarea class="form_message" name="message" placeholder="Your message" required></textarea>
+		<input class="form_reset" type="reset" name="reset" value="Reset">
+		<button class="form_submit">Send</button>
+		<div class="form_close"></div>
+	</form>
+
+	<main>
+		<section class="nerds"><span class="descr"><p>Static, HTML Academy PSD template NERDS</p><a href="projects/nerds/nerds.html">Review</a></span></section>
+		<section class="sedona"><span class="descr"><p>Static, HTML Academy PSD template SEDONA, simple JS</p><a href="projects/sedona/sedona.html">Review</a></span></section>
+		<section class="ds"><span class="descr"><p>Simple adaptive, free PSD template Design Studios</p><a href="projects/design_studios/ds.html">Review</a></span></section>
+		<section class="deck"><span class="descr"><p>Static, own design for friends</p><a href="projects/deck/deck.html">Review</a></span></section>
+		<section class="calc"><span class="descr"><p>Simple calculator, JS + JQuery</p><a href="projects/calc/calc.html">Review</a></span></section>
+
+
+	</main>
+
+	<div class="skills">
+		<ul>
+			<li><a href="https://www.w3.org/html/">HTML</a></li>
+			<li><a href="https://www.w3.org/Style/CSS/">CSS</a></li>
+			<li><a href="https://www.javascript.com/">JavaScript</a></li>
+			<li><a href="https://jquery.com/">JQuery</a></li>
+			<li><a href="http://lesscss.org/">Less</a></li>
+		</ul>
+	</div>
+
+	<footer class=footer_mob>
+		<div class="wrapper_soc">
+			<a href="https://vk.com" class="vk"></a>
+			<a href="https://facebook.com" class="fb"></a>
+			<a href="https://twitter.com" class="tw"></a>
+		</div>
+	</footer>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="script/ico.js"></script>
+	<script src="script/form.js"></script>
+	<script src="script/slider_mob.js"></script>
+	<script src="script/tools.js"></script>
 </body>
 </html>
+
+

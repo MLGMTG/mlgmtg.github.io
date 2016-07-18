@@ -1,0 +1,282 @@
+
+body {
+	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: 300;
+	padding: 0;
+	margin: 0;
+	min-width: 1000px;
+}
+.main_header {
+	width: 100%;
+	min-height: 435px;
+	background-color: #eeeeee;
+
+}
+.logo {
+	width: 139px;
+	height: 56px;
+	padding-left: 245px;
+	padding-top: 30px;
+}
+
+.menu {
+	float:right;
+	margin-top: 55px;
+	margin-right: 80px;
+}
+.menu>a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+	font-size: 14px;
+	line-height: 30px;
+	margin-right: 45px;
+}
+.menu>a:last-child {
+	margin-right: 160px;
+	padding-left: 30px;
+	margin-left: 20px;
+	background: url("img/basket.png") no-repeat;
+}
+.menu a:hover {
+	color: #fb565a;
+}
+.menu>a:last-child:hover {
+	background: url("img/basket2.png") no-repeat;
+}
+.menu a:active {
+color: #8f8f8f;
+}
+.menu>a:last-child:active {
+	background: url("img/basket3.png") no-repeat;
+}
+.active {
+	border-bottom: 2px solid #fb565a;
+}
+.slider_container {
+	width: 880px;
+	margin: 50px auto;
+	margin-bottom: 0px;
+}
+.slider_left {
+	float: left;
+	width: 380px;
+}
+.slider_left b {
+font-size: 36px;
+
+}
+.slider_left p {
+	font-size: 16px;
+	color:#5d6367;
+}
+.slider_left button {
+	width: 240px;
+	height: 35px;
+	background: #fb565a;
+	color: white;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 600;
+	border: none;
+	border-radius: 5px;
+}
+.slider_left button:hover {
+	background: #d6494d;
+}
+.slider_right {
+	float: right;
+	width: 338px;
+}
+
+.main_container {
+	width: 880px;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+
+.work_item {
+	float: left;
+	width: 240px;
+	margin-right: 80px;
+}
+.work_item:last-child {
+	margin-right: 0;
+}
+
+.work_item img {
+	margin-bottom: 26px;
+	height: 124px;
+	width: 240px;
+}
+.work_item b 
+{
+	font-size: 18px;
+	line-height: 30px;
+}
+.work_item p {
+	font-size: 15px;
+	line-height: 22px;
+	color: #283136;
+}
+.work_item button {
+	width: 140px;
+	height: 37px;
+	border: none;
+	border-radius: 5px;
+	margin-top: 15px;
+	color: white;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 600;
+}
+.wb1 {
+	background:#fb565a;
+}
+.wb1:hover {
+	background: #d6494d;
+}
+.wb2 {
+	background: #00ca74;
+}
+.wb2:hover {
+	background: #01a25e;
+}
+.wb3 {
+	background: #efc84a;
+}
+.wb3:hover {
+	background: #d6ae2c;
+}
+.about	{
+	margin-top: 80px;
+	padding-bottom: 70px;
+	padding-top: 80px;
+	clear: both;
+	border-top: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
+}
+.about_top_text {
+	float: left;
+	width:575px;
+
+}
+.about_top img {
+	float: right;
+	width: 240px;
+	height: 119px;
+}
+.about_top b {
+	font-size: 36px;
+	line-height: 40px;
+}
+.about_top p {
+	font-size: 16px;
+	line-height: 22px;
+	color: #283136;
+}
+.about_bot {
+	margin-top: 40px;
+
+}
+.about_bot_left {
+	float:left;
+}
+ .about_bot_right {
+	float:right;
+}
+.about_bot p, .about_bot li {
+	font-size: 16px;
+	line-height: 20px;
+	color: #283136;
+}
+.about_bot li {
+	list-style: none;
+	padding-top: 20px;
+	padding-left: 38px;
+	background: url("img/list.png") no-repeat  0px 30px; 
+}
+.projects {
+	min-height: 165px;
+	margin-top: 55px;
+	border-bottom: 2px solid #eeeeee;
+
+}
+.projects a {
+vertical-align: top;
+}
+.glukhanko {
+	padding-left: 12px;
+	padding-right: 117px;
+	padding-top: 40px;
+}
+.glukhanko:hover {
+	background: url("img/glu2.png") no-repeat 12px 40px;
+}
+.html_academy {
+	padding-right: 117px;
+	padding-top: 20px;
+}
+.html_academy:hover {
+	background: url("img/hta2.png") no-repeat 0 20px;
+}
+.borodinski:hover {
+	background: url("img/bbs2.png") no-repeat;
+}
+.map {
+	display: block;
+	margin-top: 85px; 
+	height: 80%px;
+	width: 100%;
+}
+footer {
+	min-height: 215px;
+}
+.socio {
+	padding-left: 150px;
+	padding-top: 75px;
+	display: inline-block;
+}
+.socio a {
+	display: inline-block;
+	width: 63px;
+	height: 63px;
+	padding-right: 30px;
+}
+.vk {
+	background: url("img/vk.png") no-repeat;
+}
+.vk:hover {
+background: url("img/vk2.png") no-repeat;
+}
+.fb {
+	background: url("img/fb.png") no-repeat;
+}
+.fb:hover {
+background: url("img/fb2.png") no-repeat;
+}
+.ins {
+	background: url("img/ins.png") no-repeat;
+}
+.ins:hover {
+background: url("img/ins2.png") no-repeat;
+}
+.ps {
+	display: inline-block;
+	width: 500px;
+	padding-left: 80px;
+}
+.ps b {
+	font-size: 36px;
+	line-height: 40px;
+}
+.ps p {
+	font-size: 16px;
+	line-height: 22px;
+}
+/* Распорка, ставится на родительский элемент, внутри которого есть флоаты*/
+.clearfix::after {
+	content:"";
+	display: table;
+	clear: both;
+}

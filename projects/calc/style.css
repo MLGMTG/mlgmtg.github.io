@@ -1,0 +1,41 @@
+.wrap-calc {
+		width: 200px;
+		margin: 0 auto;
+		padding: 0;
+		background-color: #555;
+		color: white;
+		text-align: center;
+		font-size: 0px;
+}
+.str {
+		display: inline-block;
+		vertical-align: center;
+		font-size: 20px;
+		width: 192px;
+		background-color: white;
+		margin-top: 3px;
+		height: 25px;
+		color: black;
+		overflow: hidden;
+
+
+}
+.row div {
+	display: inline-block;
+	vertical-align: center;
+	line-height: 25px;
+	font-size: 20px;
+  width: 50px;
+
+}
+
+
+.row .half-width  {
+	width: 100px;
+}
+
+
+.row div:hover {
+cursor: pointer; 
+background-color: orange;
+}
