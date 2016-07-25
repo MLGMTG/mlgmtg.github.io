@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title> VELOX | LP</title>
+	<link rel="stylesheet" href="style/normalize.css">
+	<link rel="stylesheet" href="style/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+</head>
+
+<body>
+<header id="section_1">
+	<nav class="clearfix">
+		<img class="header_logo" src="img/logo.png" alt="Logo">
+		<ul class="menu">
+			<li><a href="#section_2">Services</a></li>
+			<li><a href="#section_3">Portfolio</a></li>
+			<li><a href="#section_4">Testimonials</a></li>
+			<li><a href="#section_5">Contact</a></li>
+		</ul>
+	</nav>
+	<p class="greeting_h1">Velox One Page Template</p>
+	<button>Get Started Now</button>
+</header>
+
+<div class="services" id="section_2"> 
+	<p class="services_h1">OUR SERVICES</p>
+	<div class="services_wrapper"> 
+		<section>
+			<img src="img/item_1.png" alt="#">
+			<p class="item_h1">LOGO DESIGN</p>
+			<p class="item_h2">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
+		</section>
+		<section>
+			<img src="img/item_2.png" alt="#">
+			<p class="item_h1">ITEM DESIGN</p>
+			<p class="item_h2">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
+		</section>
+		<section>
+			<img src="img/item_3.png" alt="#">
+			<p class="item_h1">BRANDING</p>
+			<p class="item_h2">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
+		</section>
+		<section>
+				<img src="img/item_4.png" alt="#">
+				<p class="item_h1">ILLUSTRATIONS</p>
+				<p class="item_h2">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
+		</section>
+	</div>
+</div>
+
+<div class="portfolio" id="section_3">
+	<p class="portfolio_h1">PORTFOLIO</p>
+	<ul class="cat_search">
+		<li><a href="#">ALL</a></li>
+		<li><a href="#">ILLUSTRATIONS</a></li>
+		<li><a href="#">LOGO</a></li>
+		<li><a href="#">BRANDING</a></li>
+		<li><a href="#">WEB DESIGN</a></li>
+	</ul>
+	<div class="portfolio_wrapper">
+		<section class="portf_item_1"><span>Agency - PSD Template</span></section>
+		<section class="portf_item_2"><span>Pure Vodka Branding</span></section>
+		<section class="portf_item_3"><span>Web Design</span></section>
+		<section class="portf_item_4"><span>Everest Logo</span></section>
+		<section class="portf_item_5"><span>Poster Design</span></section>
+		<section class="portf_item_6"><span>illustration</span></section>
+	</div>
+	<button>SHOW MORE</button>
+</div>
+
+<div class="testimonials" id="section_4">
+	<p class="testimonials_h1">SEE WHAT OTHERS ARE SAYING ABOUT US</p>
+	<div class="slider">
+		<section class="slider_wrapper">
+			<div class="sl_img_1 avril over"></div>
+			<div class="sl_img_2 adam active"></div>
+			<div class="sl_img_3 christina over"></div>
+		</section>
+		<p class="sl_text_1">“Hi, my name is Avril Lavigne and Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ”</p>
+		<p class="sl_text_2">“Hi, my name is Adam Levine and Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. ”</p>
+		<p class="sl_text_3">“Hi, my name is Christina Aguilera and Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do bla bla bla... ”</p>
+		<span class="sl_left"></span>
+		<span class="sl_right"></span>
+	</div>
+</div>
+
+<div class="contact" id="section_5">
+	<div class="contact_wrapper clearfix">
+		<p class="contact_h1">Contact Us</p>
+		<div class="contact_info">
+			<p class="contact_h2">OUR ADRESS</p>
+			<p class="contact_h3">House No11132, Sector 31, Guargaon 122001 India</p>
+			<p class="contact_h2">CALL US</p>
+			<p class="contact_h3">+ 91-987543210</p>
+			<p class="contact_h3">+ 0122219018</p>
+			<p class="contact_h2">EMAIL US</p>
+			<p class="contact_h3">contactus@email.com</p>
+		</div>
+		<form class="contact_form">
+			<label>
+				<span>Name:</span>
+				<br>
+				<input type="text" name="#">
+			</label>
+
+			<label>
+				<span>Subject:</span>
+				<br>
+				<input type="text" name="#">
+			</label>
+
+			<label>
+				<span class="message_title">Your Message:</span>
+				<input class="form_message" type="text" name="#">
+			</label>
+
+			<button class="contact_btn">Send message</button>
+		</form>
+	</div>
+	<a href="#section_1" class="slider_end"></a>
+</div>
+
+<footer>
+	<p>&copy; 2016 Nishant Bazzard</p>
+</footer>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="script/PageScroll.min.js"></script>
+<script src="script/slider.js"></script>
+
+<script>
+	$(".menu a, .slider_end").mPageScroll2id();
+	$(".contact_btn").click(function(event){
+		event.preventDefault();
+	})
+</script>
+</body>
+</html>
