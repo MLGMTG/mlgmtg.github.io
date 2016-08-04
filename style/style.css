@@ -408,13 +408,13 @@ opacity: 1;
 	background-size: 100% 100%;
 }
 .calc {
-	background: url(../projects/mogo/mogo_prev.jpg) no-repeat center center;
-	background-size: 100% 100%;
+	background: url(../projects/calc/calc_prev.jpg) no-repeat center center;
+	background-size: 70% 70%;
 }
 
 .mogo {
-	background: url(../projects/calc/calc_prev.jpg) no-repeat center center;
-	background-size: 70% 70%;
+	background: url(../projects/mogo/mogo_prev.jpg) no-repeat center center;
+	background-size: 100% 100%;
 }
 
 .skills {
