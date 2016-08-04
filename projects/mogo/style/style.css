@@ -263,7 +263,7 @@ h2:before {
   width: 150px;
 }
 .services h2 {
-  width: 310px;
+  width: 320px;
 }
 .services h2:before {
   left: 130px;
@@ -839,7 +839,7 @@ h2:before {
   padding-top: 50px;
 }
 .clients h2 {
-  width: 290px;
+  width: 295px;
 }
 .clients h2:before {
   left: 120px;
@@ -990,7 +990,7 @@ h2:before {
   height: 200px;
   background: url("../img/map_bg.jpg") repeat-x center center;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .map h2 {
@@ -1112,6 +1112,9 @@ footer {
   font-style: italic;
   color: #999;
   padding: 7px 14px;
+}
+.footer_about input:focus {
+  outline: none;
 }
 .footer_about button {
   width: 150px;

@@ -9,6 +9,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 </head>
 
 <body>
@@ -461,7 +462,9 @@
   	 	$(".map").slideDown(1000);
   	 })
 
-  	$(".header_navigation a").mPageScroll2id({ scrollSpeed: 2000 });
+  	$(".header_navigation a").mPageScroll2id({ 
+  		scrollEasing: "easeInOutQuint"
+  		 });
 
 
 	});
