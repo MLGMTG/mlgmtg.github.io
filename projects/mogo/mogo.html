@@ -57,6 +57,16 @@
 						</svg></a></li>
 				</ul>
 			</div>
+			<div class="header_mobile">Menu</div>
+			<ul class="header_mobile_nav">
+				<li><a href="#section_2">ABOUT</a></li>
+				<li><a href="#section_5">SERVICE</a></li>
+				<li><a href="#section_6">TEAM</a></li>
+				<li><a href="#section_7">WORK</a></li>
+				<li><a href="#section_8">TESTIMONIALS</a></li>
+				<li><a href="#section_9">BLOG</a></li>
+				<li><a href="#section_10">CONTACT</a></li>
+			</ul>
 			<p class="creative">Creative Template</p>
 			<h1>WELCOME TO MOGO</h1>
 			<a class="learn_more" href="#">LEARN MORE</a>
@@ -245,7 +255,7 @@
 					</span></div>
 				</section>
 		
-		<div class="team_title">
+		<div class="team_title_1">
 			<b>MATTHEW DIX</b>
 			<p>Graphic Design</p>
 		</div>
@@ -255,7 +265,7 @@
 			<p>Branding/UX design</p>
 		</div>
 
-		<div class="team_title">
+		<div class="team_title_3">
 			<b>MICHAEK FETRIC</b>
 			<p>Developer</p>
 		</div>
@@ -451,13 +461,18 @@
 <script src="script/slider.js"></script>
 <script src="script/PageScroll.min.js"></script>
 <script>
+
 	$(document).ready(function(){
+		var j=1;
+		$(".map_popup").slideUp();
   	$(".overlay").css("display","none");
-  	 $(".map h2").click(function(){
-  	 	$(".map").slideUp(1000);
+
+  	$(".map h2").click(function(){
+  		$(".map").slideUp(1000);
   	 	$(".map_popup").slideDown(1000);
   	 })
-  	 $(".map_popup span").click(function(){
+
+  	$(".map_popup span").click(function(){
   	 	$(".map_popup").slideUp(1000);
   	 	$(".map").slideDown(1000);
   	 })
@@ -466,8 +481,24 @@
   		scrollEasing: "easeInOutQuint"
   		 });
 
+  	$(".header_mobile_nav a").mPageScroll2id({ 
+  		scrollEasing: "easeInOutQuint"
+  		 });
 
+  	$(".header_mobile").click(function(){
+  		if (j==1) {
+  		$(".header_mobile").css("background-image","url(img/ico_16.png)");
+  		$(".header_mobile_nav").slideDown(1000);
+  		j=2;
+  		}
+  		else if (j==2) {
+  		$(".header_mobile").css("background-image","url(img/ico_15.png)");
+  		$(".header_mobile_nav").slideUp(1000);
+			j=1;
+  		}
+  	})	
 	});
+
 	
 </script>
 
