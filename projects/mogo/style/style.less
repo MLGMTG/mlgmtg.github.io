@@ -43,7 +43,6 @@ body {
 		  	animation-name: anim_overlay_3;
 		  }
 		}
-		
 	}
 }
 
@@ -145,7 +144,6 @@ header {
 			line-height: 50px;
 		}
 	}
-
 }
 
 .creative {
@@ -207,7 +205,6 @@ h3 {
 	line-height: 24px;
 	width: 100%;
 	text-align: center;	
-	//width: 120px;
 	margin: 0 auto;
 	padding-top: 50px;
 }
@@ -302,7 +299,6 @@ h2 {
 			box-shadow: 10px 10px 0 0 @blue;
 		}
 	}
-
 }
 
 .about_static {
@@ -356,10 +352,6 @@ h2 {
 .services {
 	width: 100%;
 
-	// h3 {
-	// 	width: 150px;
-	// }
-
 	h2 {
 		width: 320px;
 
@@ -385,7 +377,6 @@ h2 {
 		font-size: 14px;
 		display: inline-block;
 		width: 25%;
-		//width: 310px;
 		padding-left: 90px;
 		 
 		p {
@@ -451,7 +442,6 @@ h2 {
 	position: relative;
 
 	h3 {
-		//width: 145px;
 		margin-top: 0;
 		padding-top: 100px;
 	}
@@ -495,10 +485,6 @@ h2 {
 }
 
 .service {
-	h3 {
-		//width: 80px;
-	}
-
 	h2 {
 		width: 210px;
 
@@ -528,10 +514,8 @@ h2 {
 .accordeon_img {
 	display: inline-block;
 	vertical-align: middle;
-	//width: 570px;
 	width: 47.5%;
 	height: 380px;
-	//margin-right: 20px;
 	margin-right: 1.5%;
 
 	img {
@@ -551,7 +535,6 @@ h2 {
 .accordeon	{
 	display: inline-block;
 	vertical-align: middle;
-	//width: 600px;
 	width: 50%;
 	height: 380px;
 	margin: 0 auto;
@@ -577,7 +560,6 @@ h2 {
 		content: "";
 		display: block;
 		position: absolute;
-		//width: 600px;
 		width: 100%;
 		height: 1px;
 		background: #999;
@@ -734,13 +716,11 @@ h2 {
 		vertical-align: middle;
 		position: relative;
 		width: 31%;
-		//width: 380px;
 		height: 470px;
 		background-color: @blue;
 		font-size: 15px;
 
 		&:nth-child(2) {
-			// margin: 0 30px;
 			margin: 0 3%;
 		}
 
@@ -748,7 +728,6 @@ h2 {
 			display: block;
 			position: absolute;
 			width: 100%;
-			//width: 380px;
 			height: 470px;
 			background: linear-gradient(to bottom, rgba(243,129,129,.8), rgba(252, 227, 138, 0.8));
 			opacity: 0;
@@ -799,7 +778,6 @@ h2 {
 }
 
 .team_item_1, .team_item_2, .team_item_3  {
-	//width: 380px;
 	width: 100%;
 	height: 470px;
 	position: absolute;
@@ -818,7 +796,6 @@ h2 {
 .team_title_1, .team_title_2, .team_title_3 {
 	display: inline-block;
 	vertical-align: top;
-	//width: 380px;
 	width: 31%;
 	margin-top: 25px;
 	text-align: center;
@@ -839,7 +816,6 @@ h2 {
 }
 
 .team_title_2 {
-	//margin: 0 30px;
 	margin: 25px 3% 0 3%;
 }
 
@@ -1015,10 +991,8 @@ h2 {
 	animation-timing-function: linear;
 
 	width: 100%;
-	//height: 830px;
 
 	h3 {
-		//width: 140px;
 		margin-top: 0;
 		padding-top: 50px;
 	}
@@ -1043,7 +1017,6 @@ h2 {
 		width: 50%;
 		min-width: 300px;
 		max-width: 600px;
-		//width: 600px;
 		display: inline-block;
 		vertical-align: middle;
 		font-size: 14px;
@@ -1052,10 +1025,6 @@ h2 {
 		div {
 			display: inline-block;
 			vertical-align: top;
-
-			// &:nth-child(2) {
-			// 	width: 380px;
-			// }
 		}
 
 		h4 {
@@ -1141,13 +1110,8 @@ h2 {
 	flex-wrap:wrap;
 
 	article {
-		//width: 380px;
 		width: 30%;
 		position: relative;
-
-		// &:nth-child(2) {
-		// 	margin: 0 1%;
-		// }
 		
 		img {
 			cursor: pointer;
@@ -1406,6 +1370,7 @@ footer {
 		font-size: 14px;
 		line-height: 16px;
 	}
+
 	article {
 		width: 400px;
 		margin-bottom: 30px;
@@ -1513,6 +1478,7 @@ footer {
 	line-height: 16px;
 	border-top: 1px solid #999;
 	text-align: center;
+	
 	a {
 		color: @pink;
 		text-decoration: none;
@@ -1553,9 +1519,18 @@ footer {
 }
 
 @media (max-width:1200px) {
-	.slider_wrapper {
-	display: none;
+	.overlay {
+		p {
+			width: 100%;
+			font-size: 30px;
+			padding-top: 150px;
+		}
 	}
+
+	.slider_wrapper {
+		display: none;
+	}
+
 	.services {
 		border-bottom: 1px solid #999;
 	}
@@ -1564,6 +1539,7 @@ footer {
   	animation-name: none;
   	background-size: cover;
   }
+
 	.clients_wrapper {
 		margin-top: 80px;
 	}
@@ -1586,6 +1562,7 @@ footer {
 		padding: 0 40px;
 		font-size: 15px;
 	}
+
 	.creative {
 		font-size: 35px;
 		width: 260px;
@@ -1600,13 +1577,14 @@ footer {
 			height: 0;
 		}
 	}
+
 	.learn_more {
 		margin-top: 80px;
 	}
 
-
 	.services_1st_line, .services_2st_line {
 		display: block;
+
 		div {
 			display: block;
 			width: 200px;
@@ -1614,6 +1592,7 @@ footer {
 			margin-top: 20px;
 		}
 	}
+
 	.services_2st_line {
 		margin-bottom: 50px;
 	}
@@ -1621,9 +1600,11 @@ footer {
 	.service_title {
 		width: 600px;
 	}
+
 	.accordeon_wrapper {
 		width: 100%;
 	}
+
 	.accordeon_img {
 		display: block;
 		margin: 0 auto;
@@ -1650,6 +1631,7 @@ footer {
 	.clients_wrapper {
 		article {
 			margin-bottom: 40px;
+			
 			p {
 				font-size: 12px;
 				width: 95%;
@@ -1667,13 +1649,14 @@ footer {
 }
 
 @media (max-width:700px) {
-
  .header_wrapper {
  	padding-top: 0;
  }
+
  .header_nav_wrap {
  	display: none;
  }
+
  .header_mobile {
  	display: block;
  }
@@ -1699,18 +1682,22 @@ footer {
 		}
  	}
  }
+
  .about_static {
  	height: 120px;
  	margin-top: 50px;
  }
+
 .static_wrapper {
 	div {
 		height: 120px;
 	}
 }		
+
 .static_count {
 	font-size: 25px;
 }
+
 .static_title {
 	font-size: 10px;
 }
@@ -1731,6 +1718,7 @@ footer {
 		}
 	}
 }
+
 .work {
 	h2 {
 		width: 320px;
@@ -1754,13 +1742,13 @@ footer {
 		display: block;
 		margin: 0 auto;
 		margin-top: 20px;
+		
 		div {
 			display: block;
 			margin: 0 auto;
 			text-align: justify;
 		}
 	}
-
 }
 
 .map_popup {
@@ -1769,25 +1757,21 @@ footer {
 		span {
 		left: 50%;
 		top: 610px;
-
 		}
 	}
 }
 .footer_about input {
-	
-		border-right: 1px solid #999;
+	border-right: 1px solid #999;
 	
 }
 .footer_blogs {
 	article {
 		width: 280px;
 		margin-bottom: 10px;
+		
 		div {
 			width: 130px;
 		}
-
 	}
 }
 }
-
-
